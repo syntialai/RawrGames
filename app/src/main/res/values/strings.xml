@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">RawrGames</string>
+
+
+    <!-- Game -->
+    <string name="release_date_label">Release date %s</string>
+
+    <!-- Main -->
+    <string name="main_nav_home">Home</string>
+    <string name="main_nav_favorite">Favorite</string>
+
+    <!-- Home -->
+    <string name="home_title">Games For You</string>
+
+    <!-- Favorite -->
+    <string name="favorite_title">Favorite Games</string>
+
+    <!-- Game Detail -->
+    <string name="games_detail_title">Detail</string>
+    <string name="to_be_released">To be released</string>
+</resources>
