@@ -23,10 +23,10 @@ class ApiInterceptor : Interceptor {
     Log.d(TAG, "request url: $requestUrlBuilder")
 
     val response = chain.proceed(requestBuilder.build())
-    val responseBodyString = response.body?.string().orEmpty()
+    val responseBodyString = response.body.string()
     logApiResponseEvent(requestUrlBuilder.toString(), response, responseBodyString)
 
-    val newResponseBody = responseBodyString.toResponseBody(response.body?.contentType())
+    val newResponseBody = responseBodyString.toResponseBody(response.body.contentType())
     return response.newBuilder().body(newResponseBody).build()
   }
 

@@ -3,7 +3,7 @@ package com.syntia.rawrgames.ui.screen.main
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.KeyboardArrowLeft
+import androidx.compose.material.icons.automirrored.outlined.KeyboardArrowLeft
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -74,14 +74,14 @@ private fun MainTopAppBar(
       if (currentTopLevelDestination == null) {
         IconButton(onClick = popBackStack) {
           Icon(
-            imageVector = Icons.Outlined.KeyboardArrowLeft,
+            imageVector = Icons.AutoMirrored.Outlined.KeyboardArrowLeft,
             contentDescription = null
           )
         }
       }
     },
     actions = {
-
+      // No Implementation Required
     }
   )
 }
