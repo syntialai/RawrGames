@@ -193,7 +193,9 @@ private fun GameDetailScreenContent(
       imageVector = Icons.Outlined.CheckCircle,
       contentDescription = "played_count",
       colorFilter = ColorFilter.tint(Color.DarkGray),
-      modifier = Modifier.size(16.dp)
+      modifier = Modifier
+        .size(16.dp)
+        .padding(start = 4.dp)
     )
 
     Text(
@@ -205,11 +207,19 @@ private fun GameDetailScreenContent(
   }
 
   Text(
+    text = stringResource(R.string.about),
+    style = MaterialTheme.typography.titleMedium,
+    modifier = Modifier
+      .horizontalPaddingModifier()
+      .padding(top = 32.dp)
+  )
+
+  Text(
     text = game.description,
     style = MaterialTheme.typography.bodyMedium,
     modifier = Modifier
       .horizontalPaddingModifier()
-      .padding(top = 32.dp)
+      .padding(top = 4.dp)
   )
 }
 
